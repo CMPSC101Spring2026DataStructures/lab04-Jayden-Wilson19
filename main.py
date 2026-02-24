@@ -1,7 +1,7 @@
 
 # Basic Rock Paper Scissors Game
-# Name: Add Your Name Here
-# Date: Add The Date Here
+# Name: Jayden Wilson
+# Date: 2/27/26 (new due date)
 
 import random
 
@@ -17,7 +17,7 @@ import random
 from rich.console import Console
 from rich.text import Text
 
-# Create a Console object for rich output
+
 console = Console()
 """
 main.py (Starter Template)
@@ -35,11 +35,21 @@ console = Console()
 choices = ['rock', 'paper', 'scissors']
 num_to_choice = {'1': 'rock', '2': 'paper', '3': 'scissors'}
 
-# TODO: Implement this function to get and validate the user's choice.
+
 def get_user_choice():
-	"""Prompt the user for their choice and return 'rock', 'paper', or 'scissors'."""
-	# TODO: Use console.input and validate input (accept 1/2/3 or words)
-	pass
+	"""
+    Code to get the user's choice of rock, paper, or scissors.
+
+	It prompts the user until a valid input is received.
+    """
+	input_prompt = "Enter your choice (1 for Rock, 2 for Paper, 3 for Scissors):"
+	
+	while True:
+		user_input = input(input_prompt).strip()
+		if user_input in num_to_choice:
+			return num_to_choice[user_input]
+		else:
+			console.print("[bold red]Invalid input. Please enter 1, 2, or 3.[/bold red]")
 
 # TODO: Implement this function to randomly select the computer's choice.
 def get_computer_choice():
