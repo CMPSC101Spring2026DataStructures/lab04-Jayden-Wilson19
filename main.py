@@ -58,12 +58,12 @@ def get_computer_choice():
 
     """
 	input_prompt = "Enter your choice (1 for Rock, 2 for Paper, 3 for Scissors):"
-	"""Randomly return 'rock', 'paper', or 'scissors'."""
+	
 	return random.choice(choices)
 
 
 def determine_winner(user_choice, computer_choice):
-	"""Return 'user', 'computer', or 'tie' based on the choices."""
+	
 	if user_choice == computer_choice:
 		return 'tie' # If both choices are the same, it's a tie.
 	elif (user_choice == 'rock' and computer_choice == 'scissors') or \
@@ -73,10 +73,20 @@ def determine_winner(user_choice, computer_choice):
 	else:
 		return 'computer'
 
-# TODO: Implement this function to print the round result with color.
+
 def print_round_result(user_choice, computer_choice, winner):
-	"""Print the choices and the winner of the round using rich colors."""
-	pass
+	"""
+	Prints the choices and the result of the round in a colorful format using the 'rich' library.
+
+    """
+	console.print(f"You chose: [bold blue]{user_choice.capitalize()}[/bold blue]")
+	console.print(f"Computer chose: [bold magenta]{computer_choice.capitalize()}[/bold magenta]")
+	if winner == 'tie':
+		console.print("[bold yellow]It's a tie![/bold yellow]")
+	elif winner == 'user':
+		console.print("[bold green]You win this round![/bold green]")
+	else:
+		console.print("[bold red]Computer wins this round![/bold red]")
 
 # TODO: Implement the main game loop.
 def main():
