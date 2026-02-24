@@ -1,7 +1,7 @@
 # Reflection: Rock, Paper, Scissors Lab
 
-Name: Add Your Name Here
-Date: Add The Date Here
+Name: Jayden Wilson
+Date: 2/27/26
 
 Please answer the following questions after you have completed the programming lab. Write your answers in complete sentences and provide thoughtful responses.
 
