@@ -88,20 +88,28 @@ def print_round_result(user_choice, computer_choice, winner):
 	else:
 		console.print("[bold red]Computer wins this round![/bold red]")
 
-# TODO: Implement the main game loop.
+
 def main():
 	"""Main function to run the game for 3 rounds and print the final result."""
 	user_score = 0
 	computer_score = 0
 	rounds = 3
 	for round_num in range(1, rounds + 1):
-		# TODO: Get user and computer choices
-		# TODO: Determine winner
-		# TODO: Print round result
-		# TODO: Update scores
-		pass
-	# TODO: Print final scores and announce the overall winner
-	pass
+		console.print(f"\n[bold cyan]Round {round_num}[/bold cyan]")
+		user_choice = get_user_choice()
+		computer_choice = get_computer_choice()
+		winner = determine_winner(user_choice = user_choice, computer_choice = computer_choice)
+		print_round_result(user_choice = user_choice, computer_choice = computer_choice, winner = winner)
+		if winner == 'user':
+			user_score += 1
+		elif winner == 'computer':
+			computer_score += 1
+	
+	console.print(f"\nFinal Score - You: [bold green]{user_score}[/bold green], Computer: [bold red]{computer_score}[/bold red]")
+	console.print("[bold cyan]Game Over![/bold cyan]")
+	console.print(f"You won {user_score} rounds, Computer won {computer_score} rounds.")
+	console.print(f"Overall Winner: [bold magenta]{'You' if user_score > computer_score else 'Computer' if computer_score > user_score else 'No one, it\'s a tie'}[/bold magenta]")
+	console.print("[bold cyan]Thanks for playing![/bold cyan]")
 
 if __name__ == "__main__":
 	main()
