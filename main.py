@@ -55,16 +55,23 @@ def get_user_choice():
 def get_computer_choice():
 	"""
 	Code that will randomly return 'rock', 'paper', or 'scissors' for the computer's choice.
-	
+
     """
 	input_prompt = "Enter your choice (1 for Rock, 2 for Paper, 3 for Scissors):"
 	"""Randomly return 'rock', 'paper', or 'scissors'."""
 	return random.choice(choices)
 
-# TODO: Implement this function to determine the winner of a round.
+
 def determine_winner(user_choice, computer_choice):
 	"""Return 'user', 'computer', or 'tie' based on the choices."""
-	pass
+	if user_choice == computer_choice:
+		return 'tie' # If both choices are the same, it's a tie.
+	elif (user_choice == 'rock' and computer_choice == 'scissors') or \
+		 (user_choice == 'paper' and computer_choice == 'rock') or \
+		 (user_choice == 'scissors' and computer_choice == 'paper'): # Block of code goes through all the possible options to show the outcome of each game
+	    return 'user'
+	else:
+		return 'computer'
 
 # TODO: Implement this function to print the round result with color.
 def print_round_result(user_choice, computer_choice, winner):
