@@ -51,10 +51,15 @@ def get_user_choice():
 		else:
 			console.print("[bold red]Invalid input. Please enter 1, 2, or 3.[/bold red]")
 
-# TODO: Implement this function to randomly select the computer's choice.
+
 def get_computer_choice():
+	"""
+	Code that will randomly return 'rock', 'paper', or 'scissors' for the computer's choice.
+	
+    """
+	input_prompt = "Enter your choice (1 for Rock, 2 for Paper, 3 for Scissors):"
 	"""Randomly return 'rock', 'paper', or 'scissors'."""
-	pass
+	return random.choice(choices)
 
 # TODO: Implement this function to determine the winner of a round.
 def determine_winner(user_choice, computer_choice):
