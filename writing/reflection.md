@@ -58,7 +58,7 @@ In my code, theres a message for the computer to choose from the available optio
 
 Your Response:
 
-TODO
+I normally like following directions, although there was clear directions for my main program, giving it its own identity and setting it apart from the already given code while still outputting a similar message was a bit challenging.
 
 ## Ethical Reflection Questions
 
@@ -66,14 +66,19 @@ TODO
 
 Your Response:
 
-TODO
+There will be instances when your code might just be long, but there are many ways to minimize them so it's a lot easier for you to read and other around. Different functions main purpose is to simplify a longer method into a smaller and easier to read method that will not only help you understand your own code, but employeers and employees aswell when looking into future jobs.
 
 2. Consider the use of open source code (like the spaghetti code provided). What are some ethical considerations when using, modifying, or sharing code written by others?
 
 Your Response:
 
-TODO
+Similar to writing an essay, given free access to sources that will help support your point, but still being written from your perspective will show the evidence, but written in a way you understood it while not having it completely ripped from that source by including extra information and ideas from yourself.
+
+Copying someone elses code doesn't properly show that you understand whats happening and doesn't show anything written by you.
 
 ---
 
 (Did you remember to add your name and date at the top of your reflection file?)
+
+yeah yeah yeah
+yeah yeah yeah yeah yeah -  LCD Soundsystem
