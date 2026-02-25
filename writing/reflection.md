@@ -28,13 +28,31 @@ Projects like this for example will have a number(s) already given that could be
 
 Your Response:
 
-TODO
+The main purpose of comments and docstrings are to keep not only you, but others who will also have to look at your code of what's happening in a certain area. I used a docstring for every function to summarize what's the code doing in this section, for example: 
+
+def print_round_result(user_choice, computer_choice, winner):
+	"""
+	Prints the choices and the result of the round in a colorful format using the 'rich' library.
+
+    """
+
+I didn't have many comments as most of it was kinda basic information, but one of the many spots I used a comment was in places that could somewhat confuse anyone looking at my code, for example:
+
+if user_choice == computer_choice:
+		return 'tie' # If both choices are the same, it's a tie.
+	elif (user_choice == 'rock' and computer_choice == 'scissors') or \
+		 (user_choice == 'paper' and computer_choice == 'rock') or \
+		 (user_choice == 'scissors' and computer_choice == 'paper'): # Block of code goes through all the possible options to show the outcome of each game
+
+
 
 4. Explain how the computer's move is generated in your program. What Python features did you use to accomplish this?
 
 Your Response:
 
-TODO
+Mos would think, after writing the code for the user input, it would also be the same for the computer. However, since this isn't a 2 player game that requires another persons inout as that would be kinda weird to execute, we instead use random.choice and connect it to the choices dictionary with all of the options it can choose from, randomly.
+
+In my code, theres a message for the computer to choose from the available options that of course won't display for the user. That's when the random.choice function will start and end.
 
 5. What was the most challenging part of refactoring the spaghetti code into a more structured program? How did you overcome this challenge?
 
